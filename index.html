@@ -2,29 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Madlyn Anglin | GIS & Ecology</title>
-    
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" />
 
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 
-    <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" />
-
-    <!-- CSS -->
+    <!-- Bootstrap -->
     <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- 🌿 Nature Theme Styling -->
+    <style>
+        :root {
+            --green: #2e7d32;
+            --light-green: #a5d6a7;
+            --dark-green: #1b5e20;
+            --bg: #f4faf5;
+        }
+
+        body {
+            background-color: var(--bg);
+            font-family: "Muli", sans-serif;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: "Saira Extra Condensed", sans-serif;
+        }
+
+        /* Sidebar */
+        #sideNav {
+            background-color: var(--green) !important;
+        }
+
+        .text-primary {
+            color: var(--green) !important;
+        }
+
+        a {
+            color: var(--green);
+        }
+
+        a:hover {
+            color: var(--dark-green);
+        }
+
+        /* Sections */
+        .resume-section {
+            padding: 5rem 2rem;
+        }
+
+        .resume-section-content {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        /* Cards for GIS maps */
+        .map-card {
+            background: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease;
+        }
+
+        .map-card:hover {
+            transform: translateY(-5px);
+        }
+
+        img {
+            border-radius: 12px;
+        }
+
+        .social-icon:hover {
+            background-color: var(--green);
+        }
+
+        /* Hero feel */
+        #about {
+            padding-top: 6rem;
+        }
+
+        .lead {
+            font-size: 1.15rem;
+        }
+    </style>
 </head>
 
 <body id="page-top">
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav">
+    <a class="navbar-brand" href="#page-top">
         <span class="d-block d-lg-none">Madlyn Anglin</span>
         <span class="d-none d-lg-block">
-            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.png" alt="profile" />
+            <img class="img-fluid img-profile rounded-circle mx-auto mb-2"
+                 src="assets/img/profile.png" alt="profile">
         </span>
     </a>
 
@@ -34,115 +111,104 @@
 
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">GIS and Research Experience</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#gis">GIS Maps</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gis">GIS Maps</a></li>
         </ul>
     </div>
 </nav>
 
-<!-- Page Content -->
-<div class="container-fluid p-0">
-
-<!-- About -->
+<!-- ABOUT -->
 <section class="resume-section" id="about">
     <div class="resume-section-content">
         <h1 class="mb-0">
             Madlyn <span class="text-primary">Anglin</span>
         </h1>
 
-        <div class="subheading mb-5">
-            Biology Master Student · Temple University ·
+        <div class="subheading mb-4">
+            Biology Master's Student · Temple University ·
             <a href="mailto:madlynanglin@gmail.com">madlynanglin@gmail.com</a>
         </div>
 
-        <p class="lead mb-5">
-            Hi, I’m Maddie! I am a Master’s student at Temple University in Dr. Brent Sewall’s Lab. 
-            I’ve always felt most at home outdoors, whether hiking, climbing, or exploring ecosystems. 
-            That connection to nature has grown into a commitment to understanding and protecting biodiversity 
-            through ecological research and conservation.
+        <p class="lead">
+            Hi, I’m Maddie 🌿 I’m a Master’s student at Temple University working in ecology and biodiversity conservation.
+            I’m especially interested in how landscapes, species, and human systems connect through space and time.
         </p>
 
-        <div class="social-icons">
+        <p class="lead">
+            I spend much of my work using GIS and remote sensing to explore ecological patterns and support conservation decisions.
+            I’m passionate about turning spatial data into meaningful environmental insights.
+        </p>
+
+        <div class="social-icons mt-4">
             <a class="social-icon" href="#"><i class="fab fa-linkedin-in"></i></a>
             <a class="social-icon" href="#"><i class="fab fa-github"></i></a>
         </div>
     </div>
 </section>
 
-<hr class="m-0" />
+<hr>
 
-<!-- GIS & Research Experience -->
+<!-- EXPERIENCE -->
 <section class="resume-section" id="experience">
     <div class="resume-section-content">
-        <h2 class="mb-5">GIS and Research Experience</h2>
+        <h2>GIS & Research Experience</h2>
 
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <h3 class="mb-0"></h3>
-                <div class="subheading mb-3"></div>
+        <p>
+            I have taken multiple GIS and remote sensing courses where I developed skills in spatial analysis,
+            geospatial data processing, and cartographic design.
+        </p>
 
-                <p>
-                    I have taken multiple courses in Geographic Information Systems (GIS) and remote sensing, 
-                    where I developed strong technical skills in spatial analysis, mapping, and data visualization. 
-                    Through these experiences, I worked with geospatial datasets, satellite imagery, and environmental data.
-                </p>
-
-                <p>
-                    I have applied GIS in both my undergraduate and graduate research to analyze ecological patterns, 
-                    map biodiversity, and support conservation-focused projects. My work integrates GIS tools to better 
-                    understand environmental systems and contribute to data-driven conservation strategies.
-                </p>
-            </div>
-
-            <div class="flex-shrink-0">
-                <span class="text-primary"></span>
-            </div>
-        </div>
-
+        <p>
+            I have applied GIS in both undergraduate and graduate research to study ecological systems,
+            map biodiversity patterns, and support conservation planning. My work includes analyzing satellite imagery,
+            building spatial datasets, and producing maps for scientific interpretation.
+        </p>
     </div>
 </section>
 
-<hr class="m-0" />
+<hr>
 
-<!-- GIS Map Showcase -->
+<!-- GIS MAPS -->
 <section class="resume-section" id="gis">
     <div class="resume-section-content">
         <h2 class="mb-5">Fundamentals of GIS – Map Showcase</h2>
 
-        <div class="mb-5">
-            <h4>Map 1: Pennsylvania 2020 Presidential Election Results by County</h4>
+        <!-- MAP 1 -->
+        <div class="map-card">
+            <h4>Pennsylvania 2020 Election Map</h4>
             <img src="assets/img/map1.png" class="img-fluid mb-3" alt="Map 1">
             <p>
-                This map shows how voting patterns varied across Pennsylvania counties in the 2020 election, helping solve the problem of visualizing regional political differences. By grouping counties into six vote-share categories, it highlights strong Republican support in rural areas and stronger Democratic support in urban regions like Philadelphia and Pittsburgh. The graduated red and blue color scheme makes it easy to see not just who won, but the intensity of support. Overall, the map reveals clear geographic polarization across the state. The analysis used attribute joins to connect voting data to county boundaries, the Field Calculator to classify vote percentages, and choropleth symbology to display results.
+                This map shows county-level voting patterns in Pennsylvania, revealing strong geographic polarization
+                between urban and rural regions using choropleth classification.
             </p>
         </div>
 
-        <div class="mb-5">
-            <h4>Map 2: Buffer and Overlay Analysis for Site Suitability</h4>
+        <!-- MAP 2 -->
+        <div class="map-card">
+            <h4>Food Access Suitability Analysis</h4>
             <img src="assets/img/map2.png" class="img-fluid mb-3" alt="Map 2">
             <p>
-                This map identifies the most suitable locations for a new healthy food store in Philadelphia by solving the problem of limited access to healthy food options. The analysis focuses on areas that meet key criteria: being within an empowerment zone, close to public transportation, and not near existing farmers markets or healthy corner stores. By combining these spatial conditions, the map highlights underserved areas where a new store would have the greatest impact. The result helps guide planning decisions and supports efforts to improve food accessibility. The analysis used buffer operations to measure proximity, dissolve to merge overlapping areas, and overlay tools such as intersect and erase to refine suitable locations, along with consistent coordinate system projection and multipart to singlepart conversion for accurate processing.
+                This GIS analysis identifies optimal locations for a healthy food store using buffer, dissolve,
+                and overlay tools to locate underserved areas.
             </p>
         </div>
 
-        <div class="mb-5">
-            <h4>Map 3: Flint, Michigan High-Risk Water Exposure Zones</h4>
+        <!-- MAP 3 -->
+        <div class="map-card">
+            <h4>Flint Water Risk Zones</h4>
             <img src="assets/img/map3.png" class="img-fluid mb-3" alt="Map 3">
             <p>
-                This map identifies areas in Flint most at risk of contaminated drinking water by solving the problem of where multiple environmental hazards overlap. It combines buffers around high-emission TRI facilities, rivers, and lead service lines to highlight zones where all three risks intersect. These overlapping areas represent the highest exposure risk and help guide where intervention is most needed. The map simplifies complex environmental data into a clear visual for decision-making. Key GIS tools included buffer analysis, attribute filtering, spatial intersect to find overlaps, projection into a consistent coordinate system, and clipping to Flint’s boundaries.
+                This map highlights overlapping environmental hazards in Flint, Michigan, identifying high-risk
+                areas for water contamination using spatial intersect analysis.
             </p>
         </div>
 
     </div>
 </section>
 
-</div>
-
-<!-- Bootstrap JS -->
+<!-- JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Core JS -->
 <script src="js/scripts.js"></script>
 
 </body>
