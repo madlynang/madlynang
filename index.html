@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Madlyn Anglin | GIS & Ecology</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    
 
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -24,7 +24,7 @@
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Madlyn Anglin</span>
         <span class="d-none d-lg-block">
-            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="profile" />
+            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.png" alt="profile" />
         </span>
     </a>
 
@@ -111,29 +111,26 @@
         <h2 class="mb-5">Fundamentals of GIS – Map Showcase</h2>
 
         <div class="mb-5">
-            <h4>Land Cover Classification Map</h4>
-            <img src="assets/img/map1.jpg" class="img-fluid mb-3" alt="Map 1">
+            <h4>Map 1: Pennsylvania 2020 Presidential Election Results by County</h4>
+            <img src="assets/img/map1.png" class="img-fluid mb-3" alt="Map 1">
             <p>
-                This map demonstrates land cover classification using remote sensing data, 
-                highlighting vegetation types and land use patterns.
+                This map shows how voting patterns varied across Pennsylvania counties in the 2020 election, helping solve the problem of visualizing regional political differences. By grouping counties into six vote-share categories, it highlights strong Republican support in rural areas and stronger Democratic support in urban regions like Philadelphia and Pittsburgh. The graduated red and blue color scheme makes it easy to see not just who won, but the intensity of support. Overall, the map reveals clear geographic polarization across the state. The analysis used attribute joins to connect voting data to county boundaries, the Field Calculator to classify vote percentages, and choropleth symbology to display results.
             </p>
         </div>
 
         <div class="mb-5">
-            <h4>Species Distribution Map</h4>
-            <img src="assets/img/map2.jpg" class="img-fluid mb-3" alt="Map 2">
+            <h4>Map 2: Buffer and Overlay Analysis for Site Suitability</h4>
+            <img src="assets/img/map2.png" class="img-fluid mb-3" alt="Map 2">
             <p>
-                This map visualizes species distribution using GIS spatial analysis tools, 
-                reflecting my work in ecology and biodiversity research.
+                This map identifies the most suitable locations for a new healthy food store in Philadelphia by solving the problem of limited access to healthy food options. The analysis focuses on areas that meet key criteria: being within an empowerment zone, close to public transportation, and not near existing farmers markets or healthy corner stores. By combining these spatial conditions, the map highlights underserved areas where a new store would have the greatest impact. The result helps guide planning decisions and supports efforts to improve food accessibility. The analysis used buffer operations to measure proximity, dissolve to merge overlapping areas, and overlay tools such as intersect and erase to refine suitable locations, along with consistent coordinate system projection and multipart to singlepart conversion for accurate processing.
             </p>
         </div>
 
         <div class="mb-5">
-            <h4>Elevation & Terrain Analysis</h4>
-            <img src="assets/img/map3.jpg" class="img-fluid mb-3" alt="Map 3">
+            <h4>Map 3: Flint, Michigan High-Risk Water Exposure Zones</h4>
+            <img src="assets/img/map3.png" class="img-fluid mb-3" alt="Map 3">
             <p>
-                This project focuses on terrain analysis using elevation models, 
-                demonstrating slope, aspect, and landscape features.
+                This map identifies areas in Flint most at risk of contaminated drinking water by solving the problem of where multiple environmental hazards overlap. It combines buffers around high-emission TRI facilities, rivers, and lead service lines to highlight zones where all three risks intersect. These overlapping areas represent the highest exposure risk and help guide where intervention is most needed. The map simplifies complex environmental data into a clear visual for decision-making. Key GIS tools included buffer analysis, attribute filtering, spatial intersect to find overlaps, projection into a consistent coordinate system, and clipping to Flint’s boundaries.
             </p>
         </div>
 
